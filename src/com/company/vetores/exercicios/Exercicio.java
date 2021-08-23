@@ -3,9 +3,21 @@ package com.company.vetores.exercicios;
 public class Exercicio {
     public static void main(String[] args) {
 
-        String [] cidades = new String[10]; // { Londres, Madrid, Nueva York,Buenos Aires, Asunción, São Paulo, Lima,
-        // Santiago de Chile, Lisboa, Tokio};
+        String [] cidades = {
 
+            "Londres",
+            "Madrid",
+            "Nueva York",
+            "Buenos Aires",
+            "Asunción",
+            "São Paulo",
+            "Lima",
+            "Santiago de Chile",
+            "Lisboa",
+            "Tokio"
+
+        };
+ /*
         cidades[0] = "Londres";
         cidades[1] = "Madrid";
         cidades[2] = "Nueva York";
@@ -16,7 +28,7 @@ public class Exercicio {
         cidades[7] = "Santiago de Chile";
         cidades[8] = "Lisboa";
         cidades[9] = "Tokio";
-
+*/
         int [][] temp = new int[10][2];
 
         temp[0][0] = -2;
@@ -49,25 +61,28 @@ public class Exercicio {
         temp[9][0] = -10;
         temp[9][1] = 35;
 
-
         for (int c = 0; c < cidades.length; c ++) {
 
             // System.out.println(cidades[c]);
 
             for (int t = 0; t < 2; t ++) {
 
+                String temperatura = "";
 
-                System.out.println("cidade: " + cidades[c] + " temperatura miníma: " + temp[c][t]);
+                switch (t) {
+                    case 0:
+                        temperatura = "temperatura miníma";
+                    break;
+                    case 1:
+                        temperatura = "temperatura máxima";
+                    break;
+                }
 
+                System.out.println("A cidade de " + cidades[c] + " tem a " + temperatura + " de " + temp[c][t] + " graus");
 
             }
 
-         }
-
-
-
-
-
+        }
 
     }
 }
