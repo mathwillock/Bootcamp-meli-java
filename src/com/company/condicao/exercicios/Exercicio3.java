@@ -24,6 +24,9 @@ public class Exercicio3 {
             case 2:
                 custoServico = 1500 + custoPatrulha;
             break;
+            default:
+                custoServico = 0;
+            break;
         }
 
         System.out.println("Valor a ser pago pelos serviços realizados: R$ " + custoServico);
