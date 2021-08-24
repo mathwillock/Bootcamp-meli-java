@@ -28,7 +28,7 @@ public class Pessoa {
         this.peso = peso;
     }
 
-    /*
+
     public String getNome() { return nome;}
 
     public int getIdade() {
@@ -67,7 +67,6 @@ public class Pessoa {
         this.peso = peso;
     }
 
-     */
 
     public String MaiorDeIdade() {
 
@@ -94,6 +93,10 @@ public class Pessoa {
     }
 
     public String calcularIMC() {
+
+
+       // String maiorIdade = MaiorDeIdade(); chamada callback MaiorDeIdade
+
 
         // this.peso = peso;
         // this.altura = altura;
@@ -125,7 +128,6 @@ public class Pessoa {
             break;
 
         }
-
 
         //System.out.println(indiceIMC);
 

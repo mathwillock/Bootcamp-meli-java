@@ -14,9 +14,15 @@ public class Main {
 
 
 
-        System.out.println(humano.toString() + ". " + humano.calcularIMC() + " e " + humano.MaiorDeIdade());
+
+        System.out.println(
+                humano.toString() + ". " + humano.calcularIMC() + " e " + humano.MaiorDeIdade()
+        );
 
 
+       // System.out.println(
+         //       alien.toString() + ". " + alien.calcularIMC() + " e " + alien.MaiorDeIdade()
+       // );
 
     }
 }
