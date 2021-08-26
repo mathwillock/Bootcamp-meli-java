@@ -2,20 +2,25 @@ package com.company.ExececoesUtilitarios.Exercicios.Exercicio1;
 
 public class PracticaExcecoes {
 
-    public class Excecoes {
-        int a = 0;
-        int b = 300;
+    public static void main(String[] args) {
 
-    try {
-            int quo = b / a;
-        }  void cacth (Exception) {
+         int a = 0;
+         int b = 300;
 
-        }
+         try {
+             int dividir = b/a;
+
+         } catch (ArithmeticException e ) {
+            // System.out.println("Ocorreu um erro: " + e);
+         }
+
+
+
+
+
 
 
 
     }
-
-
 
 }

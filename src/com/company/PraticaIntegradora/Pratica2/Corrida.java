@@ -9,7 +9,7 @@ public class Corrida {
     String[] listaDeVeiculos;
 
 
-    Velocidade * 1⁄2 Aceleração / (AnguloDeVirada*(Peso - NumeroDeRodas * 100).
+
 
 
 

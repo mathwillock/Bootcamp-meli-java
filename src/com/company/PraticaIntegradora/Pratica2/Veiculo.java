@@ -2,31 +2,30 @@ package com.company.PraticaIntegradora.Pratica2;
 
 public class Veiculo{
 
-    private String velocidade;
-    private int aceleracao;
+    // Os carros pesam 1000 kg e as motos 300 k, tem 4 rodas e as motos tem 2.
+
+    private double velocidade;
+    private double aceleracao;
     private double anguloDeVirada;
     private double peso;
     private String patente;
     private String rodas;
-    private String[] carros;
-    private String[] motos;
-    private String placa;
 
 
-    // Getters and Setters
-    public String getVelocidade() {
+    // Setters Getters
+    public double getVelocidade() {
         return velocidade;
     }
 
-    public void setVelocidade(String velocidade) {
+    public void setVelocidade(double velocidade) {
         this.velocidade = velocidade;
     }
 
-    public int getAceleracao() {
+    public double getAceleracao() {
         return aceleracao;
     }
 
-    public void setAceleracao(int aceleracao) {
+    public void setAceleracao(double aceleracao) {
         this.aceleracao = aceleracao;
     }
 
@@ -62,59 +61,22 @@ public class Veiculo{
         this.rodas = rodas;
     }
 
-    public String[] getCarros() {
-        return carros;
-    }
 
-    public void setCarros(String[] carros) {
-        this.carros = carros;
-    }
+    // Construtor
+    public Veiculo(){}
 
-    public String[] getMotos() {
-        return motos;
-    }
-
-    public void setMotos(String[] motos) {
-        this.motos = motos;
-    }
-
-    public String getPlaca() {
-        return placa;
-    }
-
-    public void setPlaca() {
-        this.placa = placa;
-    }
-
-    // Os carros pesam 1000 kg e as motos 300 k, tem 4 rodas e as motos tem 2.
-
-    // métodos add carro e moto.
-    public void adicionarCarro(String velocidade, int aceleracao, double anguloDeVirada, String placa) {
+    public Veiculo(double velocidade, double aceleracao, double anguloDeVirada, double peso, String patente, String rodas) {
         this.velocidade = velocidade;
         this.aceleracao = aceleracao;
         this.anguloDeVirada = anguloDeVirada;
-        this.placa = placa;
+        this.peso = peso;
+        this.patente = patente;
+        this.rodas = rodas;
     }
 
-    public void adicionarMoto(String velocidade, int aceleracao, double anguloDeVirada, String placa) {
+    public Veiculo(double velocidade, double aceleracao, double anguloDeVirada) {
         this.velocidade = velocidade;
         this.aceleracao = aceleracao;
         this.anguloDeVirada = anguloDeVirada;
-        this.placa = placa;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
