@@ -1,6 +1,6 @@
 package com.company.PraticaIntegradora.Pratica4;
 
-public class SuporteTecnico extends Pessoa implements AlunosTecnicos {
+public class SuporteTecnico extends Pessoa implements com.universidade.repository.AlunosTecnicos {
 
     private String nivelTecnico;
 

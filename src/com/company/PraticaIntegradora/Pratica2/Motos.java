@@ -32,6 +32,7 @@ public class Motos extends Veiculo{
 
     //construtors
     public Motos(double velocidade, double aceleracao, double anguloDeVirada, String placa, String nome) {
+        super(velocidade, aceleracao, anguloDeVirada);
     }
 
     public Motos(double velocidade, double aceleracao, double anguloDeVirada, String placa) {

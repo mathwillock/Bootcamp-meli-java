@@ -1,10 +1,10 @@
 package com.company.PraticaIntegradora.Pratica4;
 
-public class Pessoa {
 
 
 
-    public static class Pessoa {
+
+    public class Pessoa {
         private String nome;
         private String cpf;
         private String endereco;

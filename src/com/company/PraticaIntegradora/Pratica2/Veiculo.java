@@ -66,7 +66,7 @@ public class Veiculo{
         this.rodas = rodas;
     }
 
-    public Veiculo() {
+    public Veiculo(double velocidade, double aceleracao, double anguloDeVirada) {
         super();
     }
 

@@ -6,7 +6,7 @@ public class Carros extends Veiculo{
     private String marca;
     private String cor;
     private String modelo;
-    private String placa;
+    private static String placa;
 
     // getters and setters
     public static String getPlaca() {
@@ -14,7 +14,7 @@ public class Carros extends Veiculo{
     }
 
     public void setPlaca(String placa) {
-        this.placa = placa;
+        Carros.placa = placa;
     }
 
     public String getMarca() {
@@ -43,11 +43,12 @@ public class Carros extends Veiculo{
 
     // contrutors
     public Carros(double velocidade, double aceleracao, double anguloDeVirada, String placa, String nome) {
+        super(velocidade, aceleracao, anguloDeVirada);
     }
 
     public Carros(double velocidade, double aceleracao, double anguloDeVirada, String placa) {
         super(velocidade, aceleracao, anguloDeVirada);
-        this.placa = placa;
+        Carros.placa = placa;
     }
 
 }
