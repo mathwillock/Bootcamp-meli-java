@@ -4,15 +4,16 @@ public class PracticaExcecoes {
 
     public static void main(String[] args) {
 
-         int a = 0;
-         int b = 300;
+        int a = 0;
+        int b = 300;
 
-         try {
-             int dividir = b/a;
-
-         } catch (ArithmeticException e ) {
-            // System.out.println("Ocorreu um erro: " + e);
-         }
+        try {
+            int quociente = b / a;
+        } catch (ArithmeticException ex) {
+            System.out.println("Ocorreu um erro:" + ex.getMessage());
+        } finally {
+            System.out.println("Não pode ser dividido por zero");
+        }
 
 
 

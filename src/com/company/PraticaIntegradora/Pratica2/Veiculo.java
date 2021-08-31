@@ -2,17 +2,22 @@ package com.company.PraticaIntegradora.Pratica2;
 
 public class Veiculo{
 
-    // Os carros pesam 1000 kg e as motos 300 k, tem 4 rodas e as motos tem 2.
-
     private double velocidade;
     private double aceleracao;
     private double anguloDeVirada;
-    private double peso;
     private String patente;
-    private String rodas;
+    private int peso;
+    private int rodas;
+    private String nome;
 
+    public String getNome() {
+        return nome;
+    }
 
-    // Setters Getters
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
     public double getVelocidade() {
         return velocidade;
     }
@@ -37,14 +42,6 @@ public class Veiculo{
         this.anguloDeVirada = anguloDeVirada;
     }
 
-    public double getPeso() {
-        return peso;
-    }
-
-    public void setPeso(double peso) {
-        this.peso = peso;
-    }
-
     public String getPatente() {
         return patente;
     }
@@ -53,30 +50,31 @@ public class Veiculo{
         this.patente = patente;
     }
 
-    public String getRodas() {
+    public int getPeso() {
+        return peso;
+    }
+
+    public void setPeso(int peso) {
+        this.peso = peso;
+    }
+
+    public int getRodas() {
         return rodas;
     }
 
-    public void setRodas(String rodas) {
+    public void setRodas(int rodas) {
         this.rodas = rodas;
     }
 
-
-    // Construtor
-    public Veiculo(){}
-
-    public Veiculo(double velocidade, double aceleracao, double anguloDeVirada, double peso, String patente, String rodas) {
-        this.velocidade = velocidade;
-        this.aceleracao = aceleracao;
-        this.anguloDeVirada = anguloDeVirada;
-        this.peso = peso;
-        this.patente = patente;
-        this.rodas = rodas;
+    public Veiculo() {
+        super();
     }
 
-    public Veiculo(double velocidade, double aceleracao, double anguloDeVirada) {
+    public Veiculo(double velocidade, double aceleracao, double anguloDeVirada, String nome) {
+        super();
         this.velocidade = velocidade;
         this.aceleracao = aceleracao;
         this.anguloDeVirada = anguloDeVirada;
+        this.nome = nome;
     }
 }
